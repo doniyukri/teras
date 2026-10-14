@@ -1,0 +1,296 @@
+.teras {
+  min-height: 100vh;
+  color: hsl(var(--text-primary));
+  background: hsl(var(--bg-main));
+}
+
+.teras p,
+.teras li {
+  color: hsl(var(--text-secondary));
+}
+
+.teras h1,
+.teras h2,
+.teras h3 {
+  font-family: var(--font-display);
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  color: hsl(var(--text-primary));
+}
+
+.teras h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 0.98;
+}
+
+.teras h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.teras a {
+  color: var(--oxide);
+  text-decoration: none;
+}
+
+.ts-bar,
+.ts-main,
+.ts-foot {
+  width: min(1040px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.ts-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0 12px;
+}
+
+.ts-brand {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: hsl(var(--text-primary));
+}
+
+.ts-links {
+  display: flex;
+  gap: 16px;
+}
+
+.ts-kicker {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oxide);
+}
+
+.ts-intro {
+  padding: 28px 0 8px;
+  max-width: 40rem;
+}
+
+.ts-intro p {
+  margin: 0 0 18px;
+}
+
+.ts-btn,
+.ts-turn button,
+.ts-draft-tools button,
+.ts-owner button,
+.ts-banner button {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 10px 16px;
+  border: 1px solid hsl(var(--border-color));
+  background: transparent;
+  color: hsl(var(--text-primary));
+}
+
+.ts-btn-primary,
+.ts-turn .ts-btn-primary {
+  background: var(--oxide);
+  border-color: var(--oxide);
+  color: var(--oxide-ink);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.ts-btn:disabled,
+.ts-turn button:disabled,
+.ts-draft-tools button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.ts-shelf h2 {
+  margin-top: 28px;
+}
+
+.ts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 14px;
+  margin: 14px 0 8px;
+}
+
+.ts-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-height: 190px;
+  padding: 18px;
+  border: 1px solid hsl(var(--border-color));
+  border-radius: 14px;
+  background: hsl(var(--bg-card));
+  color: inherit;
+}
+
+.ts-card h3 {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.ts-card p {
+  margin: 0;
+}
+
+.ts-free {
+  border: 1px solid var(--oxide);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: var(--oxide);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.ts-meta {
+  margin-top: auto;
+  font-size: 0.92rem;
+}
+
+.ts-read {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  padding-top: 28px;
+}
+
+.ts-lessons {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+}
+
+.ts-lessons button {
+  width: 100%;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: none;
+  color: hsl(var(--text-secondary));
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ts-lessons button[aria-current='true'] {
+  color: var(--oxide);
+}
+
+.ts-body {
+  white-space: pre-wrap;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: hsl(var(--text-secondary));
+}
+
+.ts-turn,
+.ts-owner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.ts-share {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid hsl(var(--border-color));
+}
+
+.ts-editor {
+  padding-top: 28px;
+  display: grid;
+  gap: 14px;
+}
+
+.ts-editor label,
+.ts-drafts label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.92rem;
+}
+
+.ts-editor input,
+.ts-editor textarea,
+.ts-drafts input,
+.ts-drafts textarea {
+  width: 100%;
+  font: inherit;
+  color: hsl(var(--text-primary));
+  background: hsl(var(--bg-card));
+  border: 1px solid hsl(var(--border-color));
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.ts-drafts {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.ts-drafts li {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid hsl(var(--border-color));
+  border-radius: 12px;
+}
+
+.ts-draft-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.ts-error {
+  color: hsl(var(--danger));
+}
+
+.ts-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 22px 0 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: hsl(var(--bg-card));
+}
+
+.ts-banner p {
+  margin: 0;
+}
+
+.ts-foot {
+  padding: 28px 0 48px;
+}
+
+.ts-foot p {
+  font-size: 0.92rem;
+}
+
+@media (max-width: 800px) {
+  .ts-read {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .ts-bar {
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
